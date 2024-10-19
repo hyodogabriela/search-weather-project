@@ -46,13 +46,13 @@
     }
 
     .unit {
-        font-weight:lighter;
+        font-weight: bold;
         font-size: 16px;
         color: rgb(32, 33, 36);
         position:relative;
         top: -32px;
         line-height: 1;
-        margin-left: 5px;
+        margin-left: 0px;
         
     }
 }
