@@ -8,10 +8,13 @@ import WeatherInfo from "./WeatherInfo";
 export default function Weather(props){
     const [weatherData, setWeatherData] = useState({ready: false});
     const [city,setCity] = useState(props.defaultCity);
+
     function handleResponse(response){
+
         console.log(response.data);
         setWeatherData({
             ready: true,
+            coordinates: response.data.coordinates,
             temperature: (response.data.temperature.current),
             city: response.data.city,
             date: new Date(response.data.time*1000),
@@ -60,7 +63,7 @@ export default function Weather(props){
                     </div>
                 </form>
                 <WeatherInfo data={weatherData}/>
-                <WeatherForecast />
+                <WeatherForecast coordinates={weatherData.coordinates}/>
                 </div>
             );
 
