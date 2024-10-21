@@ -16,7 +16,7 @@ export default function WeatherInfo(props) {
         <div className="col-6">
           <div className="clearfix">
             <div className="float-left">
-              {/* Exibindo o ícone diretamente usando a URL */}
+
               <img
                 src={props.data.iconUrl}
                 alt={props.data.description}
