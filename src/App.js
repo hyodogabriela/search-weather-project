@@ -5,7 +5,8 @@ export default function App() {
   return (
     <div className="App">
       <div className="container">
-    <h1>Weather Search App</h1>
+    <h1 class="opacity-50"
+    >Weather Search Application</h1>
     <Weather defaultCity = "New york" />
     <footer>This project was coded by Gabriela Hyodo and is open-sourced at{" "}<a href="https://github.com/hyodogabriela/search-weather-project">GitHub</a></footer>
     </div>
